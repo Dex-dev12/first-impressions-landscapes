@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>First Impressions Ad</title>
+<style>
+  @font-face { font-family: 'Oswald'; font-weight: 400; src: url(fonts/Oswald-Regular.ttf); }
+  @font-face { font-family: 'Oswald'; font-weight: 500; src: url(fonts/Oswald-Medium.ttf); }
+  @font-face { font-family: 'Jost'; font-weight: 400; src: url(fonts/Jost-Regular.ttf); }
+  @font-face { font-family: 'Jost'; font-weight: 500; src: url(fonts/Jost-Medium.ttf); }
+  :root { --gold: #C9A66B; --ink: #0B0B0B; --text: #F4F1EA; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad {
+    width: 540px; height: 675px; background: var(--ink); color: var(--text);
+    padding: 26px 22px 14px; display: flex; flex-direction: column;
+    font-family: 'Jost', sans-serif;
+  }
+  .top, .mid { display: grid; grid-template-columns: 1fr 190px; column-gap: 18px; }
+  .top { align-items: center; }
+  h1 {
+    font-family: 'Oswald', sans-serif; font-weight: 400; font-size: 30px;
+    line-height: 1.32; text-transform: uppercase; text-align: center; letter-spacing: 0.3px;
+  }
+  h1 .gold { color: var(--gold); font-weight: 500; }
+  .logo { width: 100%; display: block; }
+  .mid { margin-top: 24px; }
+  .pitch { text-align: center; }
+  .pitch p { font-size: 19px; line-height: 1.3; }
+  .pitch b { font-family: 'Oswald', sans-serif; font-weight: 500; color: var(--gold); letter-spacing: 0.2px; }
+  .cta-head {
+    margin-top: 20px; font-family: 'Oswald', sans-serif; font-weight: 500;
+    font-size: 19px; color: var(--gold); text-transform: uppercase; letter-spacing: 0.4px;
+  }
+  .perks { margin-top: 10px; display: inline-flex; flex-direction: column; gap: 9px; text-align: left; }
+  .perk { display: flex; align-items: center; gap: 10px; font-size: 17px; }
+  .perk i {
+    width: 24px; height: 24px; border-radius: 50%; background: var(--gold); color: var(--ink);
+    display: grid; place-items: center; font-style: normal; font-size: 14px; font-weight: 500;
+  }
+  .spec h2 {
+    font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 17px; color: var(--gold);
+    text-align: center; margin-bottom: 6px;
+  }
+  .spec ul { list-style: none; }
+  .spec li { font-size: 16px; line-height: 1.72; padding-left: 16px; position: relative; }
+  .spec li::before {
+    content: ''; position: absolute; left: 1px; top: 50%; width: 6px; height: 6px;
+    margin-top: -3px; border-radius: 50%; background: var(--text);
+  }
+  .photos {
+    margin: auto -22px 0; padding: 0 8px; display: grid;
+    grid-template-columns: repeat(3, 1fr); gap: 30px; height: 192px;
+  }
+  .photos div { background-size: cover; background-position: center; }
+  .tagline {
+    margin-top: 12px; text-align: center; font-size: 19px; color: var(--gold); letter-spacing: 0.6px;
+  }
+</style>
+</head>
+<body>
+  <div class="ad" id="ad">
+    <div class="top">
+      <h1><span class="gold">Now booking</span> - ready<br>to upgrade your<br>outdoor space?</h1>
+      <img class="logo" src="images/logo-gold.png" alt="First Impressions">
+    </div>
+    <div class="mid">
+      <div class="pitch">
+        <p><b>First Impressions</b> is now taking on new projects &ndash; complete backyard makeovers from <b>$15K+</b>.</p>
+        <div class="cta-head">Get a free estimate today</div>
+        <div class="perks">
+          <div class="perk"><i>&#10003;</i>Free, no-obligation quotes</div>
+          <div class="perk"><i>&#10003;</i>Warranty on all designs</div>
+        </div>
+      </div>
+      <div class="spec">
+        <h2>We specialise in:</h2>
+        <ul>
+          <li>Paving</li>
+          <li>Brick &amp; block work</li>
+          <li>Retaining walls</li>
+          <li>Victorian mosaic tiling</li>
+          <li>Turf &amp; synthetic turf</li>
+          <li>Carpentry</li>
+          <li>Irrigation systems</li>
+        </ul>
+      </div>
+    </div>
+    <div class="photos">
+      <div style="background-image:url(images/victorian-mosaic-path.jpg); background-position: center 25%"></div>
+      <div style="background-image:url(images/brick-front-wall.jpg); background-position: 40% center"></div>
+      <div style="background-image:url(images/stone-garden-wall.jpg); background-position: 30% 85%"></div>
+    </div>
+    <div class="tagline">Built To Last | Designed To Impress</div>
+  </div>
+</body>
+</html>
