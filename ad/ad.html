@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Landscaping Package Ad</title>
+<style>
+  @font-face { font-family: 'Montserrat'; font-weight: 500; src: url(fonts/Montserrat-Medium.ttf); }
+  @font-face { font-family: 'Montserrat'; font-weight: 800; src: url(fonts/Montserrat-ExtraBold.ttf); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad {
+    width: 540px; height: 540px; background: #fff; padding: 0;
+    display: grid; gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 172px 1fr 164px;
+    grid-template-areas:
+      "p1 panel"
+      "p2 panel"
+      "p3 p4";
+    font-family: 'Montserrat', sans-serif;
+  }
+  .photo { background-size: cover; background-position: center; }
+  .p1 { grid-area: p1; background-image: url(images/retaining-wall.jpg); background-position: center 40%; }
+  .p2 { grid-area: p2; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .p2a { background-image: url(images/travertine-front-path.jpg); background-position: center 55%; }
+  .p2b { background-image: url(images/herringbone-brick-path.jpg); background-position: center 55%; }
+  .p3 { grid-area: p3; background-image: url(images/travertine-side-path.jpg); background-position: center 62%; }
+  .p4 { grid-area: p4; background-image: url(images/garden-screen-turf.jpg); background-position: center 55%; }
+  .panel {
+    grid-area: panel; background: #000; color: #fff;
+    padding: 18px 14px 14px; text-align: center;
+    display: flex; flex-direction: column; align-items: center;
+  }
+  h1 {
+    font-weight: 800; font-size: 22px; line-height: 1.12;
+    letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .sub {
+    margin-top: 10px; font-weight: 500; font-size: 13px; line-height: 1.3;
+    letter-spacing: 0.3px; text-transform: uppercase;
+  }
+  .price {
+    margin-top: 4px; font-weight: 800; font-size: 44px; line-height: 1;
+    letter-spacing: 1px;
+  }
+  .price small { font-size: 30px; vertical-align: 8px; margin-left: 1px; }
+  .rule { width: 100%; height: 1px; background: #fff; margin: 9px 0 7px; }
+  ul { list-style: none; align-self: stretch; text-align: left; padding-left: 6px; }
+  li {
+    font-weight: 800; font-size: 10.5px; line-height: 1.85;
+    letter-spacing: 0.4px; text-transform: uppercase;
+  }
+  .g { color: #8BD43A; }
+  .cta {
+    margin-top: auto; align-self: stretch;
+    background: #8BD43A; color: #000; font-weight: 800; font-size: 13px;
+    letter-spacing: 0.6px; text-transform: uppercase; padding: 8px 0;
+  }
+</style>
+</head>
+<body>
+  <div class="ad" id="ad">
+    <div class="photo p1"></div>
+    <div class="panel">
+      <h1>Complete Landscaping<br>Installation</h1>
+      <div class="sub">Complete landscaping<br>package from</div>
+      <div class="price">$15K<small>+</small></div>
+      <div class="rule"></div>
+      <ul>
+        <li><span class="g">Paving</span> &amp; hardscaping</li>
+        <li><span class="g">Retaining</span> walls</li>
+        <li>Artificial <span class="g">turf</span> installation</li>
+        <li><span class="g">Irrigation</span> systems</li>
+        <li>Landscaping &amp; <span class="g">more!!!</span></li>
+      </ul>
+      <div class="cta">Get a free estimate</div>
+    </div>
+    <div class="p2"><div class="photo p2a"></div><div class="photo p2b"></div></div>
+    <div class="photo p3"></div>
+    <div class="photo p4"></div>
+  </div>
+</body>
+</html>
