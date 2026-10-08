@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Project Collage CTA</title>
+<style>
+  @font-face { font-family: 'Montserrat'; font-weight: 800; src: url(fonts/Montserrat-ExtraBold.ttf); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad {
+    position: relative; width: 540px; height: 540px;
+    background: url(project-collage.jpg) center / cover;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .cta {
+    position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%);
+    display: flex; align-items: center; gap: 12px; white-space: nowrap;
+    background: #8BD43A; color: #000; border: 4px solid #fff; border-radius: 999px;
+    padding: 9px 10px 9px 26px;
+    font-weight: 800; font-size: 23px; letter-spacing: .6px; text-transform: uppercase;
+    box-shadow: 0 6px 18px rgba(0,0,0,.45);
+  }
+  .arrow {
+    width: 44px; height: 44px; border-radius: 50%; background: #000;
+    display: grid; place-items: center; flex: none;
+  }
+  .arrow svg { width: 26px; height: 26px; }
+</style>
+</head>
+<body>
+  <div class="ad" id="ad">
+    <div class="cta">Get a free estimate
+      <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15M5 12l7 7 7-7"/></svg></span>
+    </div>
+  </div>
+</body>
+</html>
