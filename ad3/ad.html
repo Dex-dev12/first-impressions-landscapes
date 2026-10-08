@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pre-Summer Landscaping Sale</title>
+<style>
+  @font-face { font-family: 'Montserrat'; font-weight: 800; src: url(fonts/Montserrat-ExtraBold.ttf); }
+  @font-face { font-family: 'Montserrat'; font-weight: 900; src: url(fonts/Montserrat-Black.ttf); }
+  @font-face { font-family: 'Kaushan'; src: url(fonts/KaushanScript.ttf); }
+  :root { --blue: #1B74D1; --deep: #0D4A94; --yellow: #FFDA2E; --white: #fff; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad {
+    position: relative; overflow: hidden;
+    width: 540px; height: 675px; color: var(--white); text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background:
+      repeating-conic-gradient(from 0deg at 50% 18%, rgba(255,255,255,.06) 0 6deg, transparent 6deg 12deg),
+      radial-gradient(ellipse at 50% 18%, #3A97EC 0%, var(--blue) 45%, var(--deep) 100%);
+  }
+  .palm { position: absolute; width: 74px; height: 74px; fill: var(--deep); opacity: .9; }
+  .head { position: relative; padding-top: 16px; }
+  .script {
+    font-family: 'Kaushan', cursive; color: var(--yellow); font-size: 27px; line-height: 1;
+    transform: rotate(-4deg); text-shadow: 0 2px 0 var(--deep);
+  }
+  .spaced {
+    font-weight: 800; font-size: 25px; letter-spacing: 11px; line-height: 1.05;
+    margin-right: -11px; text-transform: uppercase; text-shadow: 0 2px 0 var(--deep);
+  }
+  .big {
+    display: inline-block; font-weight: 900; color: var(--yellow); line-height: .95;
+    white-space: nowrap; letter-spacing: 1px; text-transform: uppercase;
+    text-shadow: 0 4px 0 var(--deep), 0 6px 14px rgba(0,0,0,.25);
+  }
+  .photo-wrap { position: relative; margin: 14px auto 0; width: 478px; height: 286px; }
+  .photo {
+    width: 100%; height: 100%; border: 6px solid var(--white);
+    background-size: cover; background-position: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+  }
+  .inset {
+    position: absolute; right: -18px; bottom: -30px; width: 150px; height: 150px;
+    border-radius: 50%; border: 6px solid var(--white);
+    background-size: cover; background-position: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,.35);
+  }
+  .from {
+    position: relative; margin-top: 40px; font-weight: 800; font-size: 22px; letter-spacing: .5px; text-transform: uppercase;
+    text-shadow: 0 2px 0 var(--deep);
+  }
+  .price {
+    font-weight: 900; color: var(--yellow); font-size: 100px; line-height: .95; letter-spacing: 1px;
+    text-shadow: 0 5px 0 var(--deep), 0 8px 18px rgba(0,0,0,.25);
+  }
+  .price sup { font-size: 46px; vertical-align: 34px; margin-right: 2px; }
+  .brand {
+    position: absolute; left: 0; right: 0; bottom: 12px;
+    font-weight: 800; font-size: 13px; letter-spacing: 2.5px; text-transform: uppercase; opacity: .95;
+  }
+</style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute">
+    <symbol id="palm" viewBox="0 0 100 100">
+      <path d="M49 98 C52 78 50 58 46 40 L50 39 C55 57 57 78 55 98 Z"/>
+      <path d="M48 40 C38 28 20 26 6 34 C20 30 34 34 44 44 Z"/>
+      <path d="M48 40 C40 22 26 12 10 12 C26 18 38 28 45 43 Z"/>
+      <path d="M49 40 C52 22 64 10 80 8 C66 18 57 28 52 42 Z"/>
+      <path d="M50 41 C62 30 80 28 94 36 C80 33 64 36 53 45 Z"/>
+      <path d="M49 41 C46 50 36 58 24 62 C36 54 42 48 46 39 Z"/>
+      <path d="M50 41 C56 50 66 56 78 58 C66 52 58 46 53 39 Z"/>
+    </symbol>
+  </svg>
+  <div class="ad" id="ad">
+    <svg class="palm" style="left:-8px; top:52px; transform:scaleX(-1)"><use href="#palm"/></svg>
+    <svg class="palm" style="right:-8px; top:52px"><use href="#palm"/></svg>
+    <div class="head">
+      <div class="script">Beat the summer rush</div>
+      <div class="spaced" style="margin-top:8px">Pre-Summer</div>
+      <div class="big" id="big">Landscaping</div>
+      <div class="spaced">Sale</div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo" id="main"></div>
+      <div class="inset" id="inset"></div>
+    </div>
+    <div class="from">
+      <svg class="palm" style="width:34px;height:34px;left:62px;top:-8px;fill:var(--deep)"><use href="#palm"/></svg>
+      Starting as low as
+      <svg class="palm" style="width:34px;height:34px;right:62px;top:-8px;fill:var(--deep);transform:scaleX(-1)"><use href="#palm"/></svg>
+    </div>
+    <div class="price"><sup>$</sup>9,997</div>
+    <div class="brand">First Impressions Landscaping</div>
+  </div>
+<script>
+  // Photos come from the query string so one layout renders every version.
+  const q = new URLSearchParams(location.search);
+  const set = (id, img, pos) => {
+    const el = document.getElementById(id);
+    el.style.backgroundImage = `url(images/${img}.jpg)`;
+    if (pos) el.style.backgroundPosition = pos;
+  };
+  set('main', q.get('main') || 'garden-screen-lawn', q.get('mpos'));
+  set('inset', q.get('inset') || 'stone-garden-wall', q.get('ipos'));
+  // Scale the headline word to span the ad width.
+  document.fonts.ready.then(() => {
+    const big = document.getElementById('big');
+    big.style.fontSize = '40px';
+    big.style.fontSize = (40 * 486 / big.offsetWidth) + 'px';
+  });
+</script>
+</body>
+</html>
