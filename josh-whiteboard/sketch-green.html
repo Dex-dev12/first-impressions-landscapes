@@ -24,10 +24,10 @@
   }
   h1 { font-family: 'Marker', cursive; font-weight: 400; line-height: .92; padding-top: 14px; }
   h1 .l1 { display: block; font-size: 48px; transform: rotate(-1.5deg); }
-  h1 .l2 { display: block; font-size: 64px; color: var(--green); margin-top: 8px; transform: rotate(-1deg); }
+  h1 .l2 { display: inline-block; font-size: 58px; color: var(--green); margin-top: 8px; transform: rotate(-1deg); }
   h1 .l3 { display: block; font-size: 25px; margin-top: 4px; letter-spacing: 1px; }
   svg.strokes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-  .art { display: block; width: 480px; height: 166px; margin: 4px auto 0; }
+  .art { display: block; width: 480px; height: 176px; margin: 14px auto 0; }
   .from { font-family: 'Marker', cursive; font-size: 30px; margin-top: 4px; }
   .price { font-family: 'Marker', cursive; font-size: 84px; line-height: 1; color: var(--green); transform: rotate(-1.5deg); }
   .amp { font-family: 'Kalam', cursive; font-weight: 700; }
@@ -38,6 +38,7 @@
   .price .pin::after { bottom: -8px; height: 5px; }
   .dash { position: absolute; top: 50%; width: 36px; height: 80px; margin-top: -44px; }
   .dash.l { left: -64px; } .dash.r { right: -64px; transform: scaleX(-1); }
+  .u2 { position: relative; } .u2::after { content: ''; position: absolute; left: -4%; right: -4%; bottom: -8px; height: 4px; border-radius: 3px; background: var(--green); transform: rotate(-1deg); }
   .brand {
     position: absolute; left: 0; right: 0; bottom: 12px;
     font-family: 'Kalam', cursive; font-weight: 700; font-size: 15px; letter-spacing: 1.5px;
@@ -54,7 +55,7 @@
         </g>
               </svg>
 
-      <h1><span class="l1 u">Full Backyard</span><span class="l2">Makeover</span><span class="l3 u"><span class="amp">&amp;</span> LANDSCAPING</span></h1>
+      <h1 style="padding-top:18px"><span class="l1 u">Full Backyard</span><span class="l2 u2">Hardscaping</span></h1>
 
       <svg class="art" viewBox="0 0 480 172" fill="none" stroke="#222" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
         <defs>
@@ -96,8 +97,15 @@
             <path d="M110 98 C104 84 98 80 90 78"/><path d="M112 98 C114 82 120 76 128 72"/><path d="M114 98 C122 88 132 86 142 88"/>
             <circle cx="80" cy="90" r="7" fill="#F7D8E4" stroke="#C2457A"/><circle cx="154" cy="88" r="6" fill="#F7D8E4" stroke="#C2457A"/>
           </g>
-          <!-- outdoor bench on paving -->
-          <path d="M210 130 H272 L276 138 H206 Z" fill="#E9D5B5" stroke="#8A5A2B"/><path d="M212 138 V146"/><path d="M270 138 V146"/>
+          <!-- red stick figure, arms out -->
+          <g stroke="#D7262B" stroke-width="2.8">
+            <circle cx="240" cy="92" r="11" fill="#fff"/>
+            <circle cx="236" cy="90" r="1.2" fill="#D7262B"/><circle cx="244" cy="90" r="1.2" fill="#D7262B"/>
+            <path d="M235 96 Q240 100 245 96" stroke-width="1.8"/>
+            <path d="M240 103 V138"/>
+            <path d="M240 112 L222 104 L214 92"/><path d="M240 112 L258 104 L266 92"/>
+            <path d="M240 138 L228 162"/><path d="M240 138 L252 162"/>
+          </g>
           <!-- lawn front left/right -->
           <g stroke="#2FA44A" stroke-width="1.6">
             <path d="M4 168 l4 -10"/><path d="M12 168 l3 -12"/><path d="M20 168 l5 -11"/><path d="M28 168 l3 -10"/><path d="M36 170 l4 -9"/><path d="M8 160 l3 -8"/><path d="M18 156 l4 -8"/><path d="M28 152 l3 -9"/>
