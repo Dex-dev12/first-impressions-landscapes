@@ -28,9 +28,9 @@
   h1 .l2 { display: block; font-size: 46px; color: var(--green); transform: rotate(-1deg); margin-top: 2px; }
   .amp { font-family: 'Kalam', cursive; font-weight: 700; font-size: 44px; }
   svg.strokes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-  .photos { position: relative; height: 218px; margin-top: 18px; }
+  .photos { position: relative; height: 176px; margin-top: 16px; }
   .pic {
-    position: absolute; top: 0; width: 218px; height: 200px; background: #fff; padding: 6px;
+    position: absolute; top: 0; width: 210px; height: 164px; background: #fff; padding: 6px;
     box-shadow: 0 4px 10px rgba(0,0,0,.25);
   }
   .pic div { width: 100%; height: 100%; background-size: cover; background-position: center; }
@@ -40,8 +40,13 @@
     position: absolute; width: 72px; height: 20px; background: rgba(236,226,190,.85);
     box-shadow: 0 1px 2px rgba(0,0,0,.12); top: -9px; left: 50%; margin-left: -36px;
   }
-  .q { font-family: 'Kalam', cursive; font-weight: 700; font-size: 29px; margin-top: 14px; transform: rotate(-1deg); }
-  .talk { font-family: 'Marker', cursive; font-size: 40px; color: var(--red); line-height: 1.1; transform: rotate(-2deg); }
+  .q { font-family: 'Kalam', cursive; font-weight: 700; font-size: 21px; margin-top: 14px; transform: rotate(-1deg); }
+  .from {
+    display: inline-block; margin-top: 8px; padding: 0 14px; font-family: 'Marker', cursive; font-size: 24px;
+    background: linear-gradient(transparent 18%, #FFE45C 18%, #FFE45C 86%, transparent 86%); transform: rotate(-2deg);
+  }
+  .price { font-family: 'Marker', cursive; font-size: 72px; line-height: .95; color: var(--red); transform: rotate(-2deg); }
+  .talk { font-family: 'Marker', cursive; font-size: 22px; color: var(--red); }
   .brand {
     position: absolute; left: 0; right: 0; bottom: 20px;
     display: flex; align-items: center; justify-content: center; gap: 8px;
@@ -67,15 +72,17 @@
           <path d="M22 40 L44 54"/><path d="M14 72 L40 74"/><path d="M22 104 L44 92"/>
           <path d="M498 40 L476 54"/><path d="M506 72 L480 74"/><path d="M498 104 L476 92"/>
         </g>
-        <path d="M178 470 C240 462 316 462 362 468" stroke="#D7262B" stroke-width="5"/>
+        <path d="M160 436 C230 428 300 428 362 434" stroke="#D7262B" stroke-width="5"/>
+        <g stroke="#D7262B" stroke-width="5"><path d="M110 350 L134 360"/><path d="M104 382 L130 380"/><path d="M112 412 L134 402"/><path d="M410 350 L386 360"/><path d="M416 382 L390 380"/><path d="M408 412 L386 402"/></g>
       </svg>
       <h1><span class="l1">Retaining Walls</span><span class="l2"><span class="amp">&amp;</span> Landscaping</span></h1>
       <div class="photos">
         <div class="pic a"><div style="background-image:url(images/service-retaining-wall-2.jpg); background-position: 30% 45%"></div><span class="tape" style="transform:rotate(-6deg)"></span></div>
         <div class="pic b"><div style="background-image:url(images/process-1-design.jpg); background-position: center 40%"></div><span class="tape" style="transform:rotate(5deg)"></span></div>
       </div>
-      <div class="q">Planning an outdoor project?</div>
-      <div class="talk">Let's talk.</div>
+      <div class="from">Starting at</div>
+      <div class="price">$4,997</div>
+      <div class="q">Planning an outdoor project? <span class="talk">Let's talk.</span></div>
       <div class="brand"><img src="images/logo-mark.png" alt="">FIBONACCI LANDSCAPES</div>
     </div>
     <div class="corner" style="left:0;top:0"></div><div class="corner" style="right:0;top:0"></div>

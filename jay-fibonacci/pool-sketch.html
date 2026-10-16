@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pool Surrounds Sketch Ad</title>
+<style>
+  @font-face { font-family: 'Marker'; src: url(fonts/PermanentMarker-Regular.ttf); }
+  @font-face { font-family: 'Kalam'; font-weight: 700; src: url(fonts/Kalam-Bold.ttf); }
+  :root { --ink: #1B1B1B; --green: #1F8B3A; --red: #D7262B; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad {
+    position: relative; width: 540px; height: 540px; padding: 10px;
+    background: linear-gradient(135deg, #D9DCDF, #A9AEB3 45%, #E6E8EA 55%, #9EA3A8);
+  }
+  .corner { position: absolute; width: 22px; height: 22px; background: #1E1E1E; border-radius: 3px; }
+  .board {
+    position: relative; width: 100%; height: 100%; overflow: hidden; text-align: center; color: var(--ink);
+    background:
+      radial-gradient(ellipse at 22% 30%, rgba(0,0,0,.035), transparent 40%),
+      radial-gradient(ellipse at 80% 70%, rgba(0,0,0,.03), transparent 45%),
+      linear-gradient(160deg, #FFFFFF, #F3F4F2);
+    box-shadow: inset 0 0 0 2px #C9CCCF, inset 0 3px 8px rgba(0,0,0,.12);
+  }
+  h1 { font-family: 'Marker', cursive; font-weight: 400; line-height: .95; padding-top: 16px; }
+  h1 .l1 { display: block; font-size: 44px; transform: rotate(-1.5deg); }
+  h1 .l2 { display: block; font-size: 54px; color: var(--green); transform: rotate(-1deg); }
+  svg.strokes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .art { display: block; width: 470px; height: 196px; margin: 4px auto 0; }
+  .from {
+    display: inline-block; margin-top: 2px; padding: 0 14px; font-family: 'Marker', cursive; font-size: 26px;
+    background: linear-gradient(transparent 18%, #FFE45C 18%, #FFE45C 86%, transparent 86%);
+    transform: rotate(-2deg);
+  }
+  .price { font-family: 'Marker', cursive; font-size: 86px; line-height: .95; color: var(--red); transform: rotate(-2deg); }
+  .brand {
+    position: absolute; left: 0; right: 0; bottom: 30px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    font-family: 'Kalam', cursive; font-weight: 700; font-size: 16px; letter-spacing: 1px;
+  }
+  .brand img { width: 24px; height: 24px; }
+  .tray {
+    position: absolute; left: 10px; right: 10px; bottom: 0; height: 16px;
+    background: linear-gradient(#B7BBBF, #8E9398); border-top: 1px solid #DADDE0;
+  }
+  .marker { position: absolute; bottom: 5px; height: 11px; width: 66px; border-radius: 3px 6px 6px 3px; background: #F4F4F4; box-shadow: 0 1px 2px rgba(0,0,0,.35); }
+  .marker::before { content: ''; position: absolute; left: -10px; top: 1px; width: 12px; height: 9px; border-radius: 4px 0 0 4px; background: var(--c); }
+  .marker::after { content: ''; position: absolute; left: 18px; top: 2px; width: 30px; height: 7px; border-radius: 2px; background: var(--c); opacity: .85; }
+</style>
+</head>
+<body>
+  <div class="ad" id="ad">
+    <div class="board">
+      <svg class="strokes" viewBox="0 0 520 520" fill="none" stroke-linecap="round">
+        <g stroke="#1F8B3A" stroke-width="5">
+          <path d="M26 36 L50 52"/><path d="M16 70 L44 72"/><path d="M26 104 L50 92"/>
+          <path d="M494 36 L470 52"/><path d="M504 70 L476 72"/><path d="M494 104 L470 92"/>
+        </g>
+        <path d="M60 128 C170 120 340 118 462 124" stroke="#1F8B3A" stroke-width="5"/>
+        <g stroke="#D7262B" stroke-width="5">
+          <path d="M96 360 L122 370"/><path d="M90 394 L118 392"/><path d="M98 426 L122 414"/>
+          <path d="M424 360 L398 370"/><path d="M430 394 L402 392"/><path d="M422 426 L398 414"/>
+        </g>
+        <path d="M150 444 C220 436 300 436 372 442" stroke="#D7262B" stroke-width="5"/>
+      </svg>
+      <h1><span class="l1">Complete Pool</span><span class="l2">Surrounds</span></h1>
+
+      <svg class="art" viewBox="0 0 470 196" fill="none" stroke="#222" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <defs>
+          <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="2.6"/></filter>
+          <pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><path d="M0 4.5 H9" stroke="#3E8FD0" stroke-width="1.6"/></pattern>
+        </defs>
+        <g filter="url(#rough)">
+          <!-- back fence -->
+          <path d="M20 70 H450"/><path d="M20 40 H450"/>
+          <g stroke-width="1.6">
+            <path d="M30 40 V72"/><path d="M60 40 V72"/><path d="M90 40 V72"/><path d="M120 40 V72"/><path d="M150 40 V72"/><path d="M180 40 V72"/><path d="M210 40 V72"/><path d="M240 40 V72"/><path d="M270 40 V72"/><path d="M300 40 V72"/><path d="M330 40 V72"/><path d="M360 40 V72"/><path d="M390 40 V72"/><path d="M420 40 V72"/>
+          </g>
+          <!-- shrubs behind fence -->
+          <g stroke="#2E8B3E" stroke-width="2">
+            <path d="M24 70 C14 52 30 36 44 46 C50 30 72 34 72 50 C84 46 90 62 80 70"/>
+            <path d="M380 70 C370 50 390 34 404 44 C412 28 436 34 434 50 C448 48 452 64 442 70"/>
+            <path d="M200 40 C196 26 214 18 224 28 C234 16 254 24 248 40"/>
+          </g>
+          
+          <!-- paving -->
+          <path d="M12 190 L82 82 H388 L458 190 Z" fill="#F1EEE8"/>
+          <g stroke-width="1.3" stroke="#555">
+            <path d="M30 162 H440"/><path d="M48 134 H422"/><path d="M66 106 H404"/>
+            <path d="M120 82 L96 190"/><path d="M190 82 L180 190"/><path d="M270 82 L282 190"/><path d="M340 82 L366 190"/>
+          </g>
+          <!-- tall plant left -->
+          <g stroke="#2E8B3E" stroke-width="2">
+            <path d="M40 150 C34 120 20 100 8 92"/><path d="M42 150 C44 118 40 96 46 78"/><path d="M44 150 C54 122 66 104 80 98"/><path d="M42 150 C30 132 18 128 6 128"/>
+          </g>
+          <path d="M28 150 H58 L54 178 H32 Z" fill="#E9E4DA"/>
+          <!-- coping -->
+          <path d="M118 166 L146 96 H324 L352 166 Z" fill="#FBFAF7" stroke-width="2.6"/>
+          <!-- water -->
+          <path d="M132 158 L156 104 H314 L338 158 Z" fill="#BFE6FA"/>
+          <path d="M132 158 L156 104 H314 L338 158 Z" fill="url(#hatch)"/>
+          <g stroke="#2F7FC1" stroke-width="2">
+            <path d="M170 124 q8 -5 16 0 t16 0"/><path d="M240 140 q8 -5 16 0 t16 0"/><path d="M262 116 q7 -4 14 0 t14 0"/>
+          </g>
+          <!-- glass fence spigots -->
+          <g stroke-width="2"><path d="M110 176 V188"/><path d="M180 176 V188"/><path d="M290 176 V188"/><path d="M360 176 V188"/></g>
+          <path d="M110 176 H360" stroke="#7FB8D8" stroke-width="1.4"/>
+          <!-- sun lounger -->
+          <path d="M70 128 L104 128 L116 114" stroke-width="2.2"/><path d="M74 128 L72 138"/><path d="M100 128 L102 138"/>
+          <!-- stick figure laying pavers -->
+          <g stroke="#D7262B" stroke-width="2.8">
+            <circle cx="408" cy="104" r="10" fill="#fff"/>
+            <path d="M398 100 Q408 88 418 100"/><path d="M416 98 L426 100"/>
+            <path d="M406 114 L392 142"/>
+            <path d="M392 142 L408 158 L404 176"/><path d="M392 142 L376 160 L384 176"/>
+            <path d="M402 122 L420 140"/><path d="M400 126 L416 146"/>
+            <circle cx="404" cy="102" r="1" fill="#D7262B"/><circle cx="412" cy="102" r="1" fill="#D7262B"/>
+            <path d="M404 108 Q408 111 412 108" stroke-width="1.8"/>
+          </g>
+          <path d="M414 142 L436 140 L438 150 L416 152 Z" fill="#DCD6CB"/>
+          <path d="M424 168 L450 166 L452 176 L426 178 Z" fill="#DCD6CB"/><path d="M430 158 L454 156 L456 166 L432 168 Z" fill="#DCD6CB"/>
+        </g>
+      </svg>
+
+      <div class="from">Starting at</div>
+      <div class="price">$4,997</div>
+      <div class="brand"><img src="images/logo-mark.png" alt="">FIBONACCI LANDSCAPES</div>
+    </div>
+    <div class="corner" style="left:0;top:0"></div><div class="corner" style="right:0;top:0"></div>
+    <div class="corner" style="left:0;bottom:0"></div><div class="corner" style="right:0;bottom:0"></div>
+    <div class="tray">
+      <span class="marker" style="--c:#1B1B1B; left:150px"></span>
+      <span class="marker" style="--c:#D7262B; left:290px"></span>
+      <span class="marker" style="--c:#1F8B3A; left:390px"></span>
+    </div>
+  </div>
+</body>
+</html>
