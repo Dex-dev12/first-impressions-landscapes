@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Retaining Walls Whiteboard Ad</title>
+<style>
+  @font-face { font-family: 'Marker'; src: url(fonts/PermanentMarker-Regular.ttf); }
+  @font-face { font-family: 'Kalam'; font-weight: 700; src: url(fonts/Kalam-Bold.ttf); }
+  :root { --ink: #1B1B1B; --green: #1F8B3A; --red: #D7262B; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad {
+    position: relative; width: 540px; height: 540px; padding: 10px;
+    background: linear-gradient(135deg, #D9DCDF, #A9AEB3 45%, #E6E8EA 55%, #9EA3A8);
+  }
+  .corner { position: absolute; width: 22px; height: 22px; background: #1E1E1E; border-radius: 3px; }
+  .board {
+    position: relative; width: 100%; height: 100%; overflow: hidden; text-align: center;
+    background:
+      radial-gradient(ellipse at 22% 30%, rgba(0,0,0,.035), transparent 40%),
+      radial-gradient(ellipse at 80% 70%, rgba(0,0,0,.03), transparent 45%),
+      linear-gradient(160deg, #FFFFFF, #F3F4F2);
+    box-shadow: inset 0 0 0 2px #C9CCCF, inset 0 3px 8px rgba(0,0,0,.12);
+    color: var(--ink);
+  }
+  h1 { font-family: 'Marker', cursive; font-weight: 400; line-height: .98; padding-top: 22px; }
+  h1 .l1 { display: block; font-size: 50px; letter-spacing: .5px; transform: rotate(-1.5deg); }
+  h1 .l2 { display: block; font-size: 46px; color: var(--green); transform: rotate(-1deg); margin-top: 2px; }
+  .amp { font-family: 'Kalam', cursive; font-weight: 700; font-size: 44px; }
+  svg.strokes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .photos { position: relative; height: 218px; margin-top: 18px; }
+  .pic {
+    position: absolute; top: 0; width: 218px; height: 200px; background: #fff; padding: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  }
+  .pic div { width: 100%; height: 100%; background-size: cover; background-position: center; }
+  .pic.a { left: 36px; transform: rotate(-3.5deg); }
+  .pic.b { right: 36px; transform: rotate(3deg); top: 8px; }
+  .tape {
+    position: absolute; width: 72px; height: 20px; background: rgba(236,226,190,.85);
+    box-shadow: 0 1px 2px rgba(0,0,0,.12); top: -9px; left: 50%; margin-left: -36px;
+  }
+  .q { font-family: 'Kalam', cursive; font-weight: 700; font-size: 29px; margin-top: 14px; transform: rotate(-1deg); }
+  .talk { font-family: 'Marker', cursive; font-size: 40px; color: var(--red); line-height: 1.1; transform: rotate(-2deg); }
+  .brand {
+    position: absolute; left: 0; right: 0; bottom: 20px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    font-family: 'Kalam', cursive; font-weight: 700; font-size: 17px; letter-spacing: 1px;
+  }
+  .brand img { width: 26px; height: 26px; }
+  .tray {
+    position: absolute; left: 10px; right: 10px; bottom: 0; height: 16px;
+    background: linear-gradient(#B7BBBF, #8E9398); border-top: 1px solid #DADDE0;
+  }
+  .marker { position: absolute; bottom: 5px; height: 11px; border-radius: 3px 6px 6px 3px; background: #F4F4F4; box-shadow: 0 1px 2px rgba(0,0,0,.35); }
+  .marker::before { content: ''; position: absolute; left: -10px; top: 1px; width: 12px; height: 9px; border-radius: 4px 0 0 4px; background: var(--c); }
+  .marker::after { content: ''; position: absolute; left: 18px; top: 2px; width: 30px; height: 7px; border-radius: 2px; background: var(--c); opacity: .85; }
+</style>
+</head>
+<body>
+  <div class="ad" id="ad">
+    <div class="board">
+      <svg class="strokes" viewBox="0 0 520 520" fill="none" stroke-linecap="round">
+        <path d="M70 128 C170 120 330 118 452 124" stroke="#1F8B3A" stroke-width="5"/>
+        <path d="M96 138 C200 133 320 132 430 137" stroke="#1F8B3A" stroke-width="3.5"/>
+        <g stroke="#1F8B3A" stroke-width="5">
+          <path d="M22 40 L44 54"/><path d="M14 72 L40 74"/><path d="M22 104 L44 92"/>
+          <path d="M498 40 L476 54"/><path d="M506 72 L480 74"/><path d="M498 104 L476 92"/>
+        </g>
+        <path d="M178 470 C240 462 316 462 362 468" stroke="#D7262B" stroke-width="5"/>
+      </svg>
+      <h1><span class="l1">Retaining Walls</span><span class="l2"><span class="amp">&amp;</span> Landscaping</span></h1>
+      <div class="photos">
+        <div class="pic a"><div style="background-image:url(images/service-retaining-wall-2.jpg); background-position: 30% 45%"></div><span class="tape" style="transform:rotate(-6deg)"></span></div>
+        <div class="pic b"><div style="background-image:url(images/process-1-design.jpg); background-position: center 40%"></div><span class="tape" style="transform:rotate(5deg)"></span></div>
+      </div>
+      <div class="q">Planning an outdoor project?</div>
+      <div class="talk">Let's talk.</div>
+      <div class="brand"><img src="images/logo-mark.png" alt="">FIBONACCI LANDSCAPES</div>
+    </div>
+    <div class="corner" style="left:0;top:0"></div><div class="corner" style="right:0;top:0"></div>
+    <div class="corner" style="left:0;bottom:0"></div><div class="corner" style="right:0;bottom:0"></div>
+    <div class="tray">
+      <span class="marker" style="--c:#1B1B1B; left:150px; width:66px"></span>
+      <span class="marker" style="--c:#D7262B; left:290px; width:66px"></span>
+      <span class="marker" style="--c:#1F8B3A; left:390px; width:66px"></span>
+    </div>
+  </div>
+</body>
+</html>
