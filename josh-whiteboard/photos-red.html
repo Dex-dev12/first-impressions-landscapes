@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Backyard Makeover Whiteboard Photo Ad</title>
+<style>
+  @font-face { font-family: 'Marker'; src: url(fonts/PermanentMarker-Regular.ttf); }
+  @font-face { font-family: 'Kalam'; font-weight: 700; src: url(fonts/Kalam-Bold.ttf); }
+  :root { --ink: #1B1B1B; --red: #D7262B; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad {
+    position: relative; width: 540px; height: 540px; padding: 10px;
+    background: linear-gradient(135deg, #D9DCDF, #A9AEB3 45%, #E6E8EA 55%, #9EA3A8);
+  }
+  .board {
+    position: relative; width: 100%; height: 100%; overflow: hidden; text-align: center; color: var(--ink);
+    background:
+      radial-gradient(ellipse at 22% 30%, rgba(0,0,0,.035), transparent 40%),
+      radial-gradient(ellipse at 80% 70%, rgba(0,0,0,.03), transparent 45%),
+      linear-gradient(160deg, #FFFFFF, #F1F2F0);
+    box-shadow: inset 0 0 0 2px #C9CCCF, inset 0 3px 8px rgba(0,0,0,.12);
+  }
+  h1 { font-family: 'Marker', cursive; font-weight: 400; line-height: .95; padding-top: 14px; }
+  h1 .l1 { display: block; font-size: 50px; transform: rotate(-2deg); }
+  h1 .l2 { display: block; font-size: 56px; transform: rotate(-1.5deg); }
+  h1 .l3 { display: block; font-size: 24px; margin-top: 2px; letter-spacing: 1px; }
+  .amp { font-family: 'Kalam', cursive; font-weight: 700; }
+  .from { font-family: 'Kalam', cursive; font-weight: 700; font-size: 22px; letter-spacing: 2px; color: var(--red); margin-top: 6px; }
+  .price-wrap { position: relative; display: inline-block; padding: 2px 44px; }
+  .price-wrap svg { position: absolute; inset: -6px -10px; width: calc(100% + 20px); height: calc(100% + 12px); }
+  .price { font-family: 'Marker', cursive; font-size: 78px; line-height: 1; color: var(--red); }
+  .offer { font-family: 'Kalam', cursive; font-weight: 700; font-size: 19px; letter-spacing: 1.5px; color: var(--red); margin-top: 4px; }
+  .photos { position: relative; height: 150px; margin-top: 12px; }
+  .pic { position: absolute; top: 0; width: 200px; height: 138px; background: #fff; padding: 5px; box-shadow: 0 4px 10px rgba(0,0,0,.25); }
+  .pic div { width: 100%; height: 100%; background-size: cover; background-position: center; }
+  .pic.a { left: 46px; transform: rotate(-3deg); }
+  .pic.b { right: 46px; transform: rotate(2.5deg); top: 6px; }
+  .tape { position: absolute; width: 64px; height: 18px; background: rgba(236,226,190,.85); top: -8px; left: 50%; margin-left: -32px; }
+  .brand { position: absolute; left: 0; right: 0; bottom: 22px; font-family: 'Kalam', cursive; font-weight: 700; font-size: 15px; letter-spacing: 1.5px; }
+  .tray { position: absolute; left: 10px; right: 10px; bottom: 0; height: 16px; background: linear-gradient(#B7BBBF, #8E9398); border-top: 1px solid #DADDE0; }
+  .marker { position: absolute; bottom: 5px; height: 11px; width: 66px; border-radius: 3px 6px 6px 3px; background: #F4F4F4; box-shadow: 0 1px 2px rgba(0,0,0,.35); }
+  .marker::before { content: ''; position: absolute; left: -10px; top: 1px; width: 12px; height: 9px; border-radius: 4px 0 0 4px; background: var(--c); }
+  .marker::after { content: ''; position: absolute; left: 18px; top: 2px; width: 30px; height: 7px; border-radius: 2px; background: var(--c); opacity: .85; }
+  .eraser { position: absolute; bottom: 4px; left: 40px; width: 58px; height: 13px; border-radius: 3px; background: #1E1E1E; }
+</style>
+</head>
+<body>
+  <div class="ad" id="ad">
+    <div class="board">
+      <h1><span class="l1">Full Backyard</span><span class="l2">Makeover</span><span class="l3"><span class="amp">&amp;</span> LANDSCAPING</span></h1>
+      <div class="from">STARTING AT</div>
+      <div class="price-wrap">
+        <svg viewBox="0 0 300 110" preserveAspectRatio="none" fill="none" stroke="#D7262B" stroke-width="3.5" stroke-linecap="round">
+          <path d="M150 6 C250 4 296 30 294 56 C292 88 230 106 150 104 C70 102 6 88 6 56 C6 26 60 8 160 10"/>
+        </svg>
+        <div class="price">$9,997</div>
+      </div>
+      <div class="offer">(LIMITED TIME OFFER)</div>
+      <div class="photos">
+        <div class="pic a"><div style="background-image:url(images/garden-screen-lawn.jpg); background-position: 45% 60%"></div><span class="tape" style="transform:rotate(-5deg)"></span></div>
+        <div class="pic b"><div style="background-image:url(images/stone-garden-wall.jpg); background-position: 30% 80%"></div><span class="tape" style="transform:rotate(4deg)"></span></div>
+      </div>
+      <div class="brand">FIRST IMPRESSIONS LANDSCAPING</div>
+    </div>
+    <div class="tray">
+      <span class="eraser"></span>
+      <span class="marker" style="--c:#1B1B1B; left:150px"></span>
+      <span class="marker" style="--c:#D7262B; left:290px"></span>
+      <span class="marker" style="--c:#1F8B3A; left:390px"></span>
+    </div>
+  </div>
+</body>
+</html>

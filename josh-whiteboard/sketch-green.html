@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Backyard Makeover Sketch Ad</title>
+<style>
+  @font-face { font-family: 'Marker'; src: url(fonts/PermanentMarker-Regular.ttf); }
+  @font-face { font-family: 'Kalam'; font-weight: 700; src: url(fonts/Kalam-Bold.ttf); }
+  :root { --ink: #1B1B1B; --green: #1F8B3A; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad {
+    position: relative; width: 540px; height: 540px; padding: 10px;
+    background: linear-gradient(135deg, #D9DCDF, #A9AEB3 45%, #E6E8EA 55%, #9EA3A8);
+  }
+  .corner { position: absolute; width: 24px; height: 24px; background: #1E1E1E; border-radius: 3px; }
+  .board {
+    position: relative; width: 100%; height: 100%; overflow: hidden; text-align: center; color: var(--ink);
+    background:
+      radial-gradient(ellipse at 22% 30%, rgba(0,0,0,.03), transparent 40%),
+      radial-gradient(ellipse at 80% 70%, rgba(0,0,0,.025), transparent 45%),
+      linear-gradient(160deg, #FFFFFF, #F4F5F3);
+    box-shadow: inset 0 0 0 2px #C9CCCF, inset 0 3px 8px rgba(0,0,0,.12);
+  }
+  h1 { font-family: 'Marker', cursive; font-weight: 400; line-height: .92; padding-top: 14px; }
+  h1 .l1 { display: block; font-size: 48px; transform: rotate(-1.5deg); }
+  h1 .l2 { display: block; font-size: 64px; color: var(--green); margin-top: 8px; transform: rotate(-1deg); }
+  h1 .l3 { display: block; font-size: 25px; margin-top: 4px; letter-spacing: 1px; }
+  svg.strokes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .art { display: block; width: 480px; height: 166px; margin: 4px auto 0; }
+  .from { font-family: 'Marker', cursive; font-size: 30px; margin-top: 4px; }
+  .price { font-family: 'Marker', cursive; font-size: 84px; line-height: 1; color: var(--green); transform: rotate(-1.5deg); }
+  .amp { font-family: 'Kalam', cursive; font-weight: 700; }
+  .u { position: relative; display: inline-block; }
+  .u::after { content: ''; position: absolute; left: -6%; right: -6%; bottom: -5px; height: 4px; border-radius: 3px; background: var(--green); transform: rotate(-1deg); }
+  h1 .l1.u { display: inline-block; } h1 .l3.u { display: inline-block; margin-top: 10px; }
+  h1 .l1.u::after { bottom: -2px; }
+  .price .pin::after { bottom: -8px; height: 5px; }
+  .dash { position: absolute; top: 50%; width: 36px; height: 80px; margin-top: -44px; }
+  .dash.l { left: -64px; } .dash.r { right: -64px; transform: scaleX(-1); }
+  .brand {
+    position: absolute; left: 0; right: 0; bottom: 12px;
+    font-family: 'Kalam', cursive; font-weight: 700; font-size: 15px; letter-spacing: 1.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="ad" id="ad">
+    <div class="board">
+      <svg class="strokes" viewBox="0 0 520 520" fill="none" stroke-linecap="round" stroke="#1F8B3A">
+        <g stroke-width="5">
+          <path d="M28 30 L52 46"/><path d="M18 64 L46 66"/><path d="M28 98 L52 86"/>
+          <path d="M492 30 L468 46"/><path d="M502 64 L474 66"/><path d="M492 98 L468 86"/>
+        </g>
+              </svg>
+
+      <h1><span class="l1 u">Full Backyard</span><span class="l2">Makeover</span><span class="l3 u"><span class="amp">&amp;</span> LANDSCAPING</span></h1>
+
+      <svg class="art" viewBox="0 0 480 172" fill="none" stroke="#222" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <defs>
+          <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="2.4"/></filter>
+        </defs>
+        <g filter="url(#rough)">
+          <!-- back fence -->
+          <path d="M40 56 H440"/><path d="M40 30 H440"/>
+          <g stroke-width="1.4"><path d="M60 30 V58"/><path d="M90 30 V58"/><path d="M120 30 V58"/><path d="M150 30 V58"/><path d="M180 30 V58"/><path d="M210 30 V58"/><path d="M240 30 V58"/><path d="M270 30 V58"/><path d="M300 30 V58"/><path d="M330 30 V58"/><path d="M360 30 V58"/><path d="M390 30 V58"/><path d="M420 30 V58"/></g>
+          <!-- conical trees -->
+          <g stroke="#1F8B3A" stroke-width="2" fill="#E3F2DF">
+            <path d="M22 96 L36 20 L50 96 Z"/><path d="M52 92 L64 32 L76 92 Z"/>
+            <path d="M430 92 L444 26 L458 92 Z"/><path d="M454 98 L466 40 L478 98 Z"/>
+          </g>
+          <g stroke="#1F8B3A" stroke-width="1.5"><path d="M30 70 l6 -6 l6 6"/><path d="M28 84 l8 -7 l8 7"/><path d="M58 70 l6 -5 l6 5"/><path d="M436 66 l8 -6 l8 6"/><path d="M460 80 l6 -5 l6 5"/></g>
+          <!-- shrubs along fence -->
+          <g stroke="#1F8B3A" stroke-width="2" fill="#E3F2DF">
+            <path d="M190 58 C184 44 198 34 210 42 C218 30 238 34 236 48 C248 46 252 58 244 62 Z"/>
+            <path d="M300 58 C294 46 306 36 318 44 C326 32 344 38 340 50 C350 50 352 60 346 62 Z"/>
+          </g>
+          <!-- timber screen (right) -->
+          <g stroke="#8A5A2B" stroke-width="2.2" fill="#E9D5B5">
+            <path d="M330 104 V44"/><path d="M420 104 V44"/>
+            <path d="M326 50 H424"/><path d="M326 62 H424"/><path d="M326 74 H424"/><path d="M326 86 H424"/><path d="M326 98 H424"/>
+          </g>
+          <g stroke="#1F8B3A" stroke-width="2" fill="#E3F2DF"><path d="M332 108 C326 96 338 88 348 94 C354 84 370 88 368 100 C376 100 378 110 372 112 Z"/><path d="M392 108 C386 96 398 88 408 94 C414 84 430 88 428 100 C436 100 438 110 432 112 Z"/></g>
+          <!-- paving -->
+          <path d="M40 166 L120 104 H360 L440 166 Z" fill="#EFECE6"/>
+          <g stroke-width="1.2" stroke="#555">
+            <path d="M66 146 H414"/><path d="M92 126 H388"/>
+            <path d="M180 104 L150 166"/><path d="M240 104 V166"/><path d="M300 104 L330 166"/>
+            <path d="M150 126 L136 146"/><path d="M210 146 L204 166"/><path d="M270 126 L272 146"/><path d="M360 146 L370 166"/>
+          </g>
+          <!-- sandstone retaining wall garden bed (left) -->
+          <path d="M14 140 L14 104 L170 98 L170 128 Z" fill="#F3E3C3"/>
+          <g stroke-width="1.4"><path d="M14 122 L170 114"/><path d="M50 103 V139"/><path d="M92 101 V136"/><path d="M134 99 V132"/><path d="M30 122 V140"/><path d="M72 120 V138"/><path d="M114 118 V134"/><path d="M152 115 V130"/></g>
+          <g stroke="#1F8B3A" stroke-width="2">
+            <path d="M40 100 C34 84 26 78 18 76"/><path d="M42 100 C44 82 50 74 58 70"/><path d="M44 100 C50 88 60 84 70 84"/>
+            <path d="M110 98 C104 84 98 80 90 78"/><path d="M112 98 C114 82 120 76 128 72"/><path d="M114 98 C122 88 132 86 142 88"/>
+            <circle cx="80" cy="90" r="7" fill="#F7D8E4" stroke="#C2457A"/><circle cx="154" cy="88" r="6" fill="#F7D8E4" stroke="#C2457A"/>
+          </g>
+          <!-- outdoor bench on paving -->
+          <path d="M210 130 H272 L276 138 H206 Z" fill="#E9D5B5" stroke="#8A5A2B"/><path d="M212 138 V146"/><path d="M270 138 V146"/>
+          <!-- lawn front left/right -->
+          <g stroke="#2FA44A" stroke-width="1.6">
+            <path d="M4 168 l4 -10"/><path d="M12 168 l3 -12"/><path d="M20 168 l5 -11"/><path d="M28 168 l3 -10"/><path d="M36 170 l4 -9"/><path d="M8 160 l3 -8"/><path d="M18 156 l4 -8"/><path d="M28 152 l3 -9"/>
+            <path d="M444 168 l4 -10"/><path d="M452 168 l3 -12"/><path d="M460 168 l5 -11"/><path d="M468 168 l3 -10"/><path d="M476 168 l2 -9"/><path d="M456 156 l3 -9"/><path d="M466 152 l4 -8"/>
+          </g>
+        </g>
+      </svg>
+
+      <div class="from"><span class="u">STARTING AT</span></div>
+      <div class="price"><span class="pin u"><svg class="dash l" viewBox="0 0 40 90" fill="none" stroke="#1F8B3A" stroke-width="5" stroke-linecap="round"><path d="M4 10 L32 24"/><path d="M2 46 L34 44"/><path d="M4 82 L32 66"/></svg>$9,997<svg class="dash r" viewBox="0 0 40 90" fill="none" stroke="#1F8B3A" stroke-width="5" stroke-linecap="round"><path d="M4 10 L32 24"/><path d="M2 46 L34 44"/><path d="M4 82 L32 66"/></svg></span></div>
+      <div class="brand">FIRST IMPRESSIONS LANDSCAPING</div>
+    </div>
+    <div class="corner" style="left:0;top:0"></div><div class="corner" style="right:0;top:0"></div>
+    <div class="corner" style="left:0;bottom:0"></div><div class="corner" style="right:0;bottom:0"></div>
+  </div>
+</body>
+</html>
