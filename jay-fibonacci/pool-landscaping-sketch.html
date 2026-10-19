@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pool Landscaping Sketch Ad</title>
+<style>
+  @font-face { font-family: 'Marker'; src: url(fonts/PermanentMarker-Regular.ttf); }
+  @font-face { font-family: 'Kalam'; font-weight: 700; src: url(fonts/Kalam-Bold.ttf); }
+  :root { --ink: #151515; --green: #1E9A2E; --red: #E0201B; --yellow: #FFE135; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .ad { position: relative; width: 540px; height: 540px; overflow: hidden; background: #FFFFFF; font-family: 'Marker', cursive; }
+  .t { position: absolute; left: 0; right: 0; text-align: center; filter: url(#pencil); }
+  .l1 { top: 12px; font-size: 52px; color: var(--ink); transform: rotate(-3deg); letter-spacing: .5px; }
+  .l2 { top: 66px; font-size: 60px; color: var(--green); transform: rotate(-2.5deg); letter-spacing: 1px; }
+  .art { position: absolute; left: 0; top: 136px; width: 540px; height: 270px; }
+  .deco { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .from {
+    position: absolute; left: 150px; top: 362px; padding: 2px 16px; font-size: 34px; color: var(--ink);
+    transform: rotate(-2deg); filter: url(#pencil);
+  }
+  .from::before { content: ''; position: absolute; inset: 4px -4px 2px -6px; background: var(--yellow); z-index: -1; transform: skewX(-8deg); border-radius: 3px; filter: url(#hl); }
+  .price { position: absolute; left: 116px; top: 398px; font-size: 98px; line-height: 1; color: var(--red); transform: rotate(-2deg); filter: url(#pencil); letter-spacing: 1px; }
+  .brand { position: absolute; right: 14px; bottom: 10px; display: flex; align-items: center; gap: 6px; font-family: 'Kalam', cursive; font-weight: 700; font-size: 12px; letter-spacing: 1px; color: #333; }
+  .brand img { width: 18px; height: 18px; }
+</style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="pencil" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -0.7 1.25" result="m"/>
+        <feComposite in="SourceGraphic" in2="m" operator="in" result="g"/>
+        <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="8" result="d"/>
+        <feDisplacementMap in="g" in2="d" scale="2.5"/>
+      </filter>
+      <filter id="hl"><feTurbulence type="fractalNoise" baseFrequency="0.04 0.4" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter>
+      <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="6"/><feDisplacementMap in="SourceGraphic" scale="2.4"/></filter>
+      <filter id="crayon" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.7 0.12" numOctaves="2" seed="9" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.45" result="m"/>
+        <feComposite in="SourceGraphic" in2="m" operator="in"/>
+      </filter>
+      <pattern id="water" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)"><rect width="10" height="10" fill="#47B4E8"/><path d="M0 3 H10" stroke="#2E8FD1" stroke-width="2"/><path d="M0 8 H10" stroke="#7DD0F2" stroke-width="1.2"/></pattern>
+      <pattern id="concrete" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)"><rect width="7" height="7" fill="#E1DDD6"/><path d="M0 3 H7" stroke="#C9C4BB" stroke-width="1"/></pattern>
+      <pattern id="timber" width="12" height="40" patternUnits="userSpaceOnUse"><rect width="12" height="40" fill="#C99366"/><path d="M11 0 V40" stroke="#8B5A33" stroke-width="1.6"/><path d="M4 0 V40" stroke="#B57E52" stroke-width="1"/></pattern>
+      <pattern id="stone" width="22" height="12" patternUnits="userSpaceOnUse"><rect width="22" height="12" fill="#C9C3B8"/><path d="M0 6 H22 M0 12 H22 M8 0 V6 M18 6 V12" stroke="#7B746A" stroke-width="1.1"/><rect x="9" y="1" width="8" height="4" fill="#B3ADA2"/></pattern>
+      <pattern id="leaf" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#4FA33C"/><path d="M0 2 H8" stroke="#2F7A27" stroke-width="1.6"/><path d="M0 6 H8" stroke="#6CC04A" stroke-width="1"/></pattern>
+      <pattern id="dark" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-40)"><rect width="7" height="7" fill="#2F7A2F"/><path d="M0 2 H7" stroke="#1D5A22" stroke-width="1.8"/></pattern>
+    </defs>
+  </svg>
+
+  <div class="ad" id="ad">
+    <svg class="deco" viewBox="0 0 540 540" fill="none" stroke-linecap="round">
+      <g stroke="#1E9A2E" stroke-width="5" filter="url(#rough)">
+        <path d="M20 30 L44 46"/><path d="M12 66 L40 68"/><path d="M20 102 L44 90"/>
+        <path d="M520 30 L496 46"/><path d="M528 66 L500 68"/><path d="M520 102 L496 90"/>
+        <path d="M84 152 C190 138 330 134 460 136" stroke-width="5.5"/>
+        <path d="M96 384 L120 396"/><path d="M90 414 L118 414"/>
+        <path d="M476 410 L450 424"/><path d="M488 446 L460 446"/><path d="M478 480 L452 468"/>
+        <path d="M70 440 L98 432"/><path d="M66 470 L94 460"/>
+      </g>
+      <path d="M120 506 C230 496 350 492 450 496" stroke="#E0201B" stroke-width="6" filter="url(#rough)"/>
+    </svg>
+
+    <div class="t l1">FULL BACKYARD</div>
+    <div class="t l2">LANDSCAPING</div>
+
+    <svg class="art" viewBox="0 0 540 270" stroke="#2A2A2A" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+      <g filter="url(#rough)">
+        <!-- timber fence -->
+        <path d="M30 44 H510 V118 H30 Z" fill="url(#timber)"/>
+        <path d="M30 44 H510" stroke-width="2.2"/>
+        <!-- trees behind fence -->
+        <g fill="url(#dark)">
+          <path d="M18 132 C10 90 26 40 40 14 C54 40 70 90 62 132 Z"/>
+          <path d="M70 120 C64 88 76 52 88 30 C100 52 112 88 106 120 Z"/>
+          <path d="M440 120 C434 86 446 50 458 26 C470 50 482 86 476 120 Z"/>
+          <path d="M486 132 C478 90 494 40 508 16 C522 40 538 90 530 132 Z"/>
+        </g>
+        <g fill="url(#leaf)">
+          <path d="M120 50 C108 34 126 18 142 26 C150 10 176 14 176 32 C192 30 196 50 182 56 Z"/>
+          <path d="M226 46 C214 30 232 16 246 24 C256 8 280 14 280 30 C296 30 298 48 284 52 Z"/>
+          <path d="M330 48 C318 32 336 18 350 26 C360 10 384 16 382 32 C398 32 400 50 386 54 Z"/>
+        </g>
+        <!-- garden bed along fence -->
+        <path d="M60 128 C70 108 96 104 112 114 C128 96 162 100 170 116 C186 100 220 104 226 118 C246 104 276 106 286 120 C304 104 336 106 344 122 C362 106 394 110 400 124 L400 134 L60 134 Z" fill="url(#leaf)"/>
+        <g stroke="#2F7A27" stroke-width="2.2" fill="none">
+          <path d="M180 132 C176 112 168 102 158 96"/><path d="M182 132 C186 110 194 100 204 96"/><path d="M181 132 C181 112 180 102 182 92"/>
+          <path d="M300 132 C296 112 288 102 278 96"/><path d="M302 132 C306 110 314 100 324 96"/>
+        </g>
+        <!-- pergola with dining (right) -->
+        <g fill="#C08A5A" stroke="#6B4423">
+          <path d="M404 170 V64 H414 V170 Z"/><path d="M500 162 V58 H510 V162 Z"/>
+          <path d="M392 64 L520 54 L522 64 L394 74 Z"/>
+          <path d="M400 54 V66 M418 52 V64 M436 51 V63 M454 50 V62 M472 49 V61 M490 48 V60 M508 47 V59" stroke-width="3"/>
+        </g>
+        <path d="M430 140 H486" stroke-width="3" stroke="#3A3A3A"/><path d="M436 140 V160 M480 140 V160" stroke="#3A3A3A"/>
+        <g fill="#5A5A5A" stroke="#333"><path d="M422 126 V160 H428 V142 H434 V160"/><path d="M494 126 V160 H488 V142 H482 V160"/></g>
+        <!-- concrete surround -->
+        <path d="M58 140 H486 L530 236 H10 Z" fill="url(#concrete)" stroke-width="2"/>
+        <g stroke="#A9A39A" stroke-width="1.1"><path d="M40 182 H506"/><path d="M200 140 L180 236"/><path d="M350 140 L370 236"/></g>
+        <!-- pool coping + water -->
+        <path d="M150 152 H392 L428 222 H112 Z" fill="#F4F2EE" stroke-width="2.2"/>
+        <path d="M164 160 H378 L408 214 H132 Z" fill="url(#water)" stroke="#1F6FA8" stroke-width="2"/>
+        <g stroke="#FFFFFF" stroke-width="2.6" fill="none" opacity=".9">
+          <path d="M190 178 q10 -6 20 0 t20 0"/><path d="M276 196 q10 -6 20 0 t20 0"/><path d="M310 172 q8 -5 16 0 t16 0"/><path d="M176 202 q8 -5 16 0 t16 0"/>
+        </g>
+        <!-- loungers -->
+        <g stroke="#333" stroke-width="1.6">
+          <path d="M44 196 L92 196 L104 178 L96 176 L86 188 L44 188 Z" fill="#F6F6F2"/>
+          <path d="M48 188 H84 V194 H48 Z" fill="#7BC043"/><path d="M90 182 L100 176 L102 180 L92 186 Z" fill="#7BC043"/>
+          <path d="M48 196 V204 M88 196 V204"/>
+        </g>
+        <!-- stone planters at corners -->
+        <path d="M2 196 H44 V246 H2 Z" fill="url(#stone)" stroke-width="2"/>
+        <path d="M0 192 H46 V198 H0 Z" fill="#DDD8CF"/>
+        <path d="M466 186 H514 V236 H466 Z" fill="url(#stone)" stroke-width="2"/>
+        <path d="M464 182 H516 V188 H464 Z" fill="#DDD8CF"/>
+        <!-- white flowering bush (left) -->
+        <path d="M0 196 C-6 170 10 150 24 158 C30 138 54 144 52 162 C64 162 66 186 52 194 Z" fill="url(#leaf)"/>
+        <g fill="#FFFFFF" stroke="#9A9A9A" stroke-width="1"><circle cx="16" cy="166" r="6"/><circle cx="34" cy="158" r="5"/><circle cx="42" cy="176" r="6"/><circle cx="22" cy="184" r="5"/></g>
+        <!-- tropical plant (right planter) -->
+        <g stroke="#2F7A27" stroke-width="3" fill="none">
+          <path d="M490 184 C486 160 474 148 460 142"/><path d="M490 184 C494 158 506 146 520 140"/><path d="M490 184 C488 162 490 150 494 136"/><path d="M490 184 C478 170 466 168 456 170"/>
+        </g>
+        
+        <g stroke="#3DAA3A" stroke-width="1.8" fill="none"><path d="M4 262 l2 -11"/><path d="M9 262 l2 -10"/><path d="M14 262 l2 -18"/><path d="M19 262 l2 -17"/><path d="M24 262 l2 -16"/><path d="M29 262 l2 -15"/><path d="M34 262 l2 -14"/><path d="M39 262 l2 -13"/><path d="M44 262 l2 -12"/><path d="M49 262 l2 -11"/><path d="M54 262 l2 -10"/><path d="M59 262 l2 -18"/><path d="M64 262 l2 -17"/><path d="M69 262 l2 -16"/><path d="M74 262 l2 -15"/><path d="M79 262 l2 -14"/><path d="M84 262 l2 -13"/><path d="M89 262 l2 -12"/><path d="M94 262 l2 -11"/><path d="M99 262 l2 -10"/><path d="M104 262 l2 -18"/><path d="M109 262 l2 -17"/><path d="M114 262 l2 -16"/><path d="M119 262 l2 -15"/><path d="M124 262 l2 -14"/><path d="M129 262 l2 -13"/><path d="M134 262 l2 -12"/><path d="M139 262 l2 -11"/><path d="M144 262 l2 -10"/><path d="M149 262 l2 -18"/><path d="M154 262 l2 -17"/><path d="M159 262 l2 -16"/><path d="M164 262 l2 -15"/><path d="M169 262 l2 -14"/><path d="M380 262 l-2 -15"/><path d="M385 262 l-2 -14"/><path d="M390 262 l-2 -13"/><path d="M395 262 l-2 -12"/><path d="M400 262 l-2 -11"/><path d="M405 262 l-2 -10"/><path d="M410 262 l-2 -18"/><path d="M415 262 l-2 -17"/><path d="M420 262 l-2 -16"/><path d="M425 262 l-2 -15"/><path d="M430 262 l-2 -14"/><path d="M435 262 l-2 -13"/><path d="M440 262 l-2 -12"/><path d="M445 262 l-2 -11"/><path d="M450 262 l-2 -10"/><path d="M455 262 l-2 -18"/><path d="M460 262 l-2 -17"/><path d="M465 262 l-2 -16"/><path d="M470 262 l-2 -15"/><path d="M475 262 l-2 -14"/><path d="M480 262 l-2 -13"/><path d="M485 262 l-2 -12"/><path d="M490 262 l-2 -11"/><path d="M495 262 l-2 -10"/><path d="M500 262 l-2 -18"/><path d="M505 262 l-2 -17"/><path d="M510 262 l-2 -16"/><path d="M515 262 l-2 -15"/><path d="M520 262 l-2 -14"/><path d="M525 262 l-2 -13"/><path d="M530 262 l-2 -12"/><path d="M535 262 l-2 -11"/></g>
+        <path d="M0 262 L10 236 H170 L160 262 Z" fill="#8FD16A" opacity=".55" stroke="none"/><path d="M380 262 L370 236 H530 L540 262 Z" fill="#8FD16A" opacity=".55" stroke="none"/>
+        <!-- garden lights -->
+        <path d="M512 248 V232" stroke="#333" stroke-width="2"/><path d="M506 232 H518 L516 226 H508 Z" fill="#333"/>
+      </g>
+    </svg>
+
+    <div class="from">STARTING AT</div>
+    <div class="price">$4,997</div>
+    <div class="brand"><img src="images/logo-mark.png" alt="">FIBONACCI LANDSCAPES</div>
+  </div>
+</body>
+</html>
