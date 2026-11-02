@@ -70,6 +70,20 @@
   .brand img { width: 24px; height: 24px; filter: brightness(1.15); }
   .script { font-size: 23px !important; margin-bottom: 6px; }
   .palm { fill: #0B1524 !important; opacity: .7 !important; }
+  /* Square 1:1 */
+  .ad.sq { height: 540px; }
+  .ad.sq .head { padding-top: 10px; }
+  .ad.sq .photo-wrap { height: 196px; width: 430px; margin-top: 10px; }
+  .ad.sq .inset { width: 120px; height: 120px; bottom: -24px; right: -20px; }
+  .ad.sq .from { margin-top: 30px !important; font-size: 19px; }
+  .ad.sq .price { font-size: 78px; }
+  .ad.sq .brand { bottom: 10px; }
+  /* Stories/Reels 9:16 - content kept clear of the top and bottom UI */
+  .ad.st { height: 960px; }
+  .ad.st .head { padding-top: 120px; }
+  .ad.st .photo-wrap { height: 330px; margin-top: 22px; }
+  .ad.st .from { margin-top: 52px !important; }
+  .ad.st .brand { bottom: 170px; } .ad.st .head { padding-top: 90px; } .ad.st .photo-wrap { height: 300px; }
 </style>
 </head>
 <body>
@@ -102,6 +116,7 @@
     <div class="brand"><img src="images/logo-mark.png" alt="">Fibonacci Landscapes</div>
   </div>
 <script>
+  if (q0 = new URLSearchParams(location.search).get('size')) document.getElementById('ad').classList.add(q0);
   // Photos come from the query string so one layout renders every version.
   const q = new URLSearchParams(location.search);
   const set = (id, img, pos) => {
